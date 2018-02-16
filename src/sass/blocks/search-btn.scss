@@ -1,0 +1,21 @@
+.btn-search {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .btn-search {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ffffff;
+    &::after {
+      display: block;
+      content: "";
+      width: 19px;
+      height: 20px;
+      background-image: url("../img/search.png");
+    }
+  }
+}

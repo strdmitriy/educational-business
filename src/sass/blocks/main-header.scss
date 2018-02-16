@@ -1,0 +1,46 @@
+.main-header {
+  position: absolute;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  height: 100px;
+  width: 100%;
+  &__container {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  &__text {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    &__container {
+    margin: 0 auto;
+    width: 684px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-header {
+    &__container {
+    margin: 0 auto;
+    width: 1021px;
+    padding: 0 20px;
+    }
+  }
+}

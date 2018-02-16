@@ -1,0 +1,12 @@
+.search {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .search {
+    display: block;
+    float: left;
+    width: 20px;
+    margin-top: 50px;
+    margin-left: 7px;
+  }
+}

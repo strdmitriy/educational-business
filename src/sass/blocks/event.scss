@@ -1,0 +1,97 @@
+.event {
+  &--conf {
+    width: 100%;
+    height: 335px;
+    padding-top: 144px;
+    background-image: url('../../img/event-conf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &--autor {
+    margin-top: 0px;
+    background-image: url('../../img/event-autor.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 159px;
+  }
+  &--news {
+    margin-top: 0px;
+    padding-top: 18px;
+    background-image: url('../../img/event-news.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 142px;
+  }
+  &--news-two {
+    margin-top: 0px;
+    padding-top: 18px;
+    background-image: url('../../img/event-news-two.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 142px;
+  }
+}
+
+@media (min-width: 768px) {
+  .event {
+    &--conf {
+      background-image: url('../../img/event-conf768.jpg');
+      height: 358px;
+    }
+    &--autor {
+      padding-top: 41px;
+      background-image: url('../../img/event-autor768.jpg');
+      height: 260px;
+    }
+    &--news {
+      float: left;
+      width: 50%;
+      background-image: url('../../img/event-news768.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 204px;
+    }
+    &--news-two {
+      float: right;
+      width: 50%;
+      background-image: url('../../img/event-news-two768.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 204px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .event {
+    &--conf {
+      float: left;
+      padding-top: 0;
+      width: 52.142857142857143%;
+      background-image: url('../../img/event-conf-desktop.jpg');
+      background-position: right;
+      height: 560px;
+    }
+    &--autor {
+      float: left;
+      padding-top: 0;
+      width: 47.857142857142857%;
+      height: 370px;
+      background-image: url('../../img/event-autor-desktop.jpg');
+    }
+    &--news {
+      float: left;
+      padding-top: 0;
+      width: 17.857142857142857%;
+      height: 190px;
+      background-image: url('../../img/event-news-desktop.jpg');
+    }
+    &--news-two {
+      float: left;
+      padding-top: 0;
+      width: 30%;
+      height: 191px;
+      background-image: url('../../img/event-news-two-desktop.jpg');
+    }
+  }
+}

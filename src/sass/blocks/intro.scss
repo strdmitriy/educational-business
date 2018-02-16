@@ -1,0 +1,17 @@
+.intro {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .intro {
+    &__wrapper {
+      float: left;
+      height: 600px;
+    }
+  }
+}

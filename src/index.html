@@ -1,173 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mishka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" href="css/style-min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+  <title>Education</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="main-header__container">
       <div class="logo">
-        <img src="img/header_logo.png" alt="400">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo768.png">
+          <img src="img/logo.png" alt="Каменный город">
+        </picture>
       </div>
-      <nav class="main-navigation">
+      <button class="toggle" type="button">Открыть меню</button>
+      <nav class="main-navigation main-navigation--visible">
         <ul class="main-navigation__menu">
-          <li class="main-navigation__link">
-            <a href="#">Новокузнецк 400</a>
+          <li class="main-navigation__item main-navigation__item--visible">
+            <a class="main-navigation__link" href="">Компания</a>
           </li>
-          <li class="main-navigation__link">
-            <a class="active" href="#">Календарь событий</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="">Новости</a>
           </li>
-          <li class="main-navigation__link">
-            <a href="#">Голосование</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="">Команда</a>
           </li>
-          <li class="main-navigation__link">
-            <a href="#">Проекты</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="">Вакансии</a>
           </li>
-          <li class="main-navigation__link">
-            <a href="#">Благоустройство</a>
+          <li class="main-navigation__item main-navigation__item--visible">
+            <a class="main-navigation__link" href="">Мероприятия</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--visible">
+            <a class="main-navigation__link" href="">Тренеры</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--visible">
+            <a class="main-navigation__link" href="">Корпоративное обучение</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="">Политика конфиденциальности</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--visible">
+            <a class="main-navigation__link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <div class="user-block">
-        <button class="user-block__search"></button>
-        <a href="#" class="user-block__foto"></a>
-        <button class="toggle">Закрыть</button>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--fb"></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--vk"></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--ins"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="search">
+        <button class="btn-search"></button>
       </div>
     </div>
   </header>
-  <main class="container">
-    <section class="description">
-      <p class="description__title">Городской праздник здорового образа жизни</p>
-      <div class="description__event">
-        <p class="description__date">25 мая</p>
-        <p class="description__time">14:00—21:30</p>
-        <p class="description__timer">172<span>дня до юбилея</span></p>
-        <div class="description__place">
-          <button class="description__city">Город-сад</button>
-          <button class="description__city">Город-спорт</button>
-          <button class="description__slider prev"></button>
-          <button class="description__slider next"></button>
+  <div class="intro">
+      <div class="event event--conf">
+        <div class="description">
+          <p class="description__date description__date--size">26 января</p>
+          <p class="description__title description__title--size"><span>Практическая</span> Конференция</p>
+          <p class="description__text description__text--size">Тенденции интернет-маркетинга 2018</p>
         </div>
       </div>
-    </section>
-    <section class="event">
-      <div class="event__wrapper">
-        <div class="event__name">
-          <a href="#" class="event__title">Проводы зимы или "Масленицы"</a>
-          <p class="event__time">14:00</p>
-          <a chref="#" class="event__text">Площадь общественных меропориятий</a>
-        </div>
-        <div class="event__name">
-          <a href="#" class="event__title large-right">Собираем урожай</a>
-          <p class="event__time">14:00-14:50</p>
-          <a href="#" class="event__text">ДК «Аллюминщик»</a>
-        </div>
-        <div class="event__name">
-          <a href="#" class="event__title">Новый джаз у старой крепости</a>
-          <p class="event__time">15:00-15:30</p>
-          <a href="#" class="event__text">Джаз-клуб «Геликон»</a>
-        </div>
-        <div class="event__name">
-          <a href="#" class="event__title">Проводы зимы или «Масленица»</a>
-          <p class="event__time">20:30-21:30</p>
-          <p class="event__project">Проект</p>
-          <a href="#" class="event__text">Площадь общественных меропориятий</a>
+      <div class="event event--autor">
+        <div class="description">
+          <p class="description__date">27 февраля</p>
+          <p class="description__autor">Илья Балахин</p>
+          <p class="description__text">Взрывной маркетинг<span> <br>и продажи</span></p>
         </div>
       </div>
-      <button class="event__all">еще 2 события</button>
-    </section>
-  </main>
-  <div class="mounth">
-    <div class="container">
-      <p class="mounth__event">Май<span>2017</span></p>
-      <p class="mounth__event rigth">Июнь<span>2017</span></p>
-    </div>
-    <ul class="mounth__menu">
-      <li class="mounth__list"><a href="#">22</a></li>
-      <li class="mounth__list"><a href="#">23</a></li>
-      <li class="mounth__list"><a href="#">24</a></li>
-      <li class="mounth__list"><a href="#">25</a></li>
-      <li class="mounth__list"><a href="#">26</a></li>
-      <li class="mounth__list"><a href="#">27</a></li>
-      <li class="mounth__list"><a href="#">28</a></li>
-      <li class="mounth__list"><a href="#">29</a></li>
-      <li class="mounth__list"><a href="#">30</a></li>
-      <li class="mounth__list"><a class="mounth__day" href="#">31</a></li>
-      <li class="mounth__list"><a href="#">01</a></li>
-      <li class="mounth__list"><a href="#">02</a></li>
-      <li class="mounth__list"><a href="#">03</a></li>
-      <li class="mounth__list"><a href="#">04</a></li>
-      <li class="mounth__list"><a href="#">05</a></li>
-      <li class="mounth__list"><a href="#">06</a></li>
-      <li class="mounth__list"><a href="#">07</a></li>
-      <li class="mounth__list"><a href="#">08</a></li>
-      <li class="mounth__list"><a href="#">09</a></li>
-      <li class="mounth__list"><a href="#">10</a></li>
-      <li class="mounth__list"><a href="#">11</a></li>
-      <li class="mounth__list"><a href="#">12</a></li>
-      <li class="mounth__list"><a href="#">10</a></li>
-    </ul>
+      <div class="event event--news">
+        <div class="description description--small">
+          <p class="description__title">Новости</p>
+          <p class="description__text description__text--small">Древний миф маркетинга</p>
+        </div>
+      </div>
+      <div class="event event--news-two">
+        <div class="description description--small">
+          <p class="description__title">Новости</p>
+          <p class="description__text description__text--small">Как развитие личности</p>
+          <p class="description__text description__text--small">влияет на бизнес</p>
+        </div>
+      </div>
   </div>
-  <div class="breadcrumb">
-    <div class="container">
-      <ul class="breadcrumb__menu">
-        <li>
-          <a href="#">Новокузнецк 400</a>
-        </li>
-        <li>
-          <a href="#">Календарь событий</a>
-        </li>
-        <li>
-          <a href="#">Голосование</a>
-        </li>
-        <li>
-          <a href="#">Проекты</a>
-        </li>
-      </ul>
-      <ul class="breadcrumb__menu--friends">
-        <li>
-          <a href="#">5 шагов благоустройства</a>
-        </li>
-        <li>
-          <a href="#">Новости</a>
-        </li>
-        <li>
-          <a href="#">Фотобанк</a>
-        </li>
-        <li>
-          <a href="#">Партнеры</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-        <li>
-          <a href="#">Карта сайта</a>
-        </li>
-      </ul>
+  <div class="promo">
+    <p class="promo__title">Не просто <span>бизнес-</span>образование</p>
+    <p class="promo__text promo__text--size">Школа бизнеса «Каменный город» – это актуальное
+      образование для руководителей и менеджеров от топовых экспертов и лидеров рынка.</p>
+    <p class="promo__title">Успех в цифрах</p>
+    <p class="promo__text promo__text--hidden">Успех в бизнесе подтверждают не слова, а цифры. Мы уверены в своём лидерстве в области
+        бизнес образования, и знаем, как помочь вашей компании добиваться стабильного успеха.</p>
+  </div>
+  <div class="result">
+    <div class="result__container">
+    <div class="result__year">
+      <picture>
+        <source media="(min-width: 1400px)" srcset="img/5.png">
+        <source media="(min-width: 768px)" srcset="img/5.png">
+        <img src="img/9.png" alt="Каменный город">
+      </picture>
+    </div>
+    <p class="result__title">лет работы с 2009 года</p>
+    <p class="result__text">За это время мы столкнулисьс сотнями кейсов от компаний разных сфер бизнеса. Разобрали и помогли решить как распространённые, так и с
+      ложные задачи. Весь наработанный опыт мы направим на то, чтобы ваш бизнес заработал на новом уровне.</p>
     </div>
   </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__description">
-        <div class="footer__logo">
-          <img src="img/footer_logo.png" alt="Герб">
-        </div>
-        <p class="footer__text">Сайт<span> Новокузнецк 400 </span>посвящён подготовке к празднованию 400 летия города Новокузнецк. Сайт является образовательным информационным проектом администрации и житилей города. По всем вопросам его работы обращайтесь в раздел <span>контакты</span></p>
-      </div>
-      <div class="social">
-        <a class="ins" href="#"></a>
-        <a class="tw" href="#"></a>
-        <a class="vk" href="#"></a>
-        <a class="fb" href="#"></a>
-      </div>
-      <div class="footer__friends">
-        <img src="img/proire.png" alt="POIRE">
-      </div>
-    </div>
-  </footer>
+  <script src="js/minjs/menu.js"></script>
 </body>
 </html>

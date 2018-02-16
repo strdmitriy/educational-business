@@ -1,0 +1,77 @@
+.social {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .social {
+    display: block;
+    float: left;
+    width: 85px;
+    &__list {
+      margin: 0;
+      padding: 0;
+      margin-top: 47px;
+    }
+    &__item {
+      position: relative;
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    a {
+      float: left;
+    	vertical-align: top;
+    	padding: 12px 11px;
+    	border-radius: 50%;
+    }
+
+    .social a:last-child {
+    	margin-right: 0;
+    }
+
+    .social a:hover {
+    	background: #fb565a;
+    }
+
+    .social a:focus {
+    	background: #fb565a;
+    }
+
+    .social a:active {
+    	background: #d6494d;
+    	-webkit-box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+    	-moz-box-shadow: inset    0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+    	-o-box-shadow: inset    0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+    	box-shadow: inset         0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .social__link--vk::before {
+    	position: absolute;
+    	content: "";
+    	width: 25px;
+    	height: 25px;
+    	top: -2px;
+    	right: 0px;
+    	background: url("../img/social-link.png") no-repeat -45px;
+    }
+
+    .social__link--fb::before {
+    	position: absolute;
+    	content: "";
+    	width: 25px;
+    	height: 25px;
+    	top: -2px;
+    	right: -2px;
+    	background: url("../img/social-link.png") no-repeat 2px 3px;
+    }
+
+    .social__link--ins::before {
+    	position: absolute;
+    	content: "";
+    	width: 25px;
+    	height: 25px;
+    	top: -2px;
+    	right: 0px;
+    	background: url("../img/social-link.png") no-repeat -21px 3px;
+    }
+  }
+}

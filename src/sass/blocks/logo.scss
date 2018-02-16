@@ -1,0 +1,33 @@
+.logo {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  float: left;
+  margin-top: 23px;
+  width: 105px;
+  height: 100px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 31px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    margin-top: 41px;
+  }
+}

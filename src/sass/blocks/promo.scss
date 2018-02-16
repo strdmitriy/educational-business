@@ -1,0 +1,102 @@
+.promo {
+  font-family: "Circe-Light", "Aria", sans-serif;
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 44px;
+  padding-bottom: 22px;
+  text-align: center;
+  &__title {
+    margin: 0;
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #333333;
+    span {
+      display: none;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 400;
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .promo {
+    font-family: "Circe-Light", "Aria", sans-serif;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 54px;
+    padding-bottom: 22px;
+    text-align: center;
+    &__title {
+      font-family: "Circe-ExtraBold", "Aria", sans-serif;
+      margin: 0;
+      font-size: 23px;
+      line-height: 40px;
+      font-weight: 700;
+      color: #333333;
+      span {
+        display: inline-block;
+      }
+    }
+    &__text {
+      margin: 0;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      font-size: 14px;
+      line-height: 31px;
+      font-weight: 400;
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .promo {
+    font-family: "Circe-Light", "Aria", sans-serif;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 79px;
+    padding-bottom: 22px;
+    text-align: center;
+    &__title {
+      font-family: "Circe-ExtraBold", "Aria", sans-serif;
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 33px;
+      line-height: 47px;
+      font-weight: 700;
+      color: #333333;
+      span {
+        display: inline-block;
+      }
+    }
+    &__text {
+      margin: 0;
+      margin-top: 57px;
+      margin-bottom: 75px;
+      font-size: 18px;
+      line-height: 31px;
+      font-weight: 400;
+      &--size {
+        margin: 0 auto;
+        width: 740px;
+        margin-top: 58px;
+        margin-bottom: 77px;
+      }
+      &--hidden {
+        display: inline-block;
+      }
+    }
+  }
+}

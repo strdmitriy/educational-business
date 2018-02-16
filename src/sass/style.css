@@ -1,1 +1,16 @@
 @import "global/normalize.scss";
+@import "global/mixin.scss";
+@import "global/variable.scss";
+@import "global/global-style.scss";
+@import "blocks/logo.scss";
+@import "blocks/toggle.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/social.scss";
+@import "blocks/search.scss";
+@import "blocks/search-btn.scss";
+@import "blocks/intro.scss";
+@import "blocks/event.scss";
+@import "blocks/description.scss";
+@import "blocks/promo.scss";
+@import "blocks/result.scss";

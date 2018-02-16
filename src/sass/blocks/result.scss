@@ -1,0 +1,25 @@
+.result {
+  padding-top: 32px;
+  height: 500px;
+  background: #e1e1e1;
+  background-image: url("../../img/bg.png");
+  &__container {
+    margin: 0  auto;
+    width: 272px;
+  }
+  &__year {
+    float: left;
+    margin-left: 31px;
+  }
+  &__title {
+    float: left;
+    width: 125px;
+    margin: 0;
+    margin-left: 20px;
+    font-family: "Circe-ExtraBold", "Aria", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
