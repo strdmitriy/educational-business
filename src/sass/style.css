@@ -2,6 +2,8 @@
 @import "global/mixin.scss";
 @import "global/variable.scss";
 @import "global/global-style.scss";
+@import "global/slick-theme.scss";
+@import "global/slick.scss";
 @import "blocks/logo.scss";
 @import "blocks/toggle.scss";
 @import "blocks/main-header.scss";
@@ -10,7 +12,14 @@
 @import "blocks/search.scss";
 @import "blocks/search-btn.scss";
 @import "blocks/intro.scss";
-@import "blocks/event.scss";
 @import "blocks/description.scss";
+@import "blocks/event.scss";
 @import "blocks/promo.scss";
 @import "blocks/result.scss";
+@import "blocks/main-page.scss";
+@import "blocks/reason.scss";
+@import "blocks/reason-items.scss";
+@import "blocks/program.scss";
+@import "blocks/program-info.scss";
+@import "blocks/email.scss";
+@import "blocks/email-btn.scss";

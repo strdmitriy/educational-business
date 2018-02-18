@@ -1,0 +1,29 @@
+.program {
+  &__wrapper {
+    width: 272px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin: 0;
+    margin-top: 170px;
+    font-size: 27px;
+    line-height: 37px;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .program {
+    &__wrapper {
+      margin: 0 auto;
+      width: 684px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      align-content: stretch;
+    }
+  }
+}

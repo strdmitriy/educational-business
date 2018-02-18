@@ -1,6 +1,6 @@
 .result {
-  padding-top: 32px;
-  height: 500px;
+  padding-top: 47px;
+  height: 457px;
   background: #e1e1e1;
   background-image: url("../../img/bg.png");
   &__container {
@@ -17,9 +17,94 @@
     margin: 0;
     margin-left: 20px;
     font-family: "Circe-ExtraBold", "Aria", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: 900;
     text-transform: uppercase;
+  }
+  &__text {
+    float: left;
+    width: 272px;
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .result {
+    padding-top: 47px;
+    height: 333px;
+    background: #e1e1e1;
+    background-image: url("../../img/bg.png");
+    &__container {
+      margin: 0  auto;
+      width: 684px;
+    }
+    &__text-wrapper {
+      float: left;
+      width: 280px;
+    }
+    &__year {
+      position: relative;
+      top: -56px;
+      left: -25px;
+    }
+    &__title {
+      width: 331px;
+      margin: 0;
+      margin-left: 20px;
+      font-size: 19px;
+      line-height: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &__text {
+      margin-top: 13px;
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .result {
+    padding-top: 47px;
+    height: 474px;
+    background: #e1e1e1;
+    background-image: url("../../img/bg.png");
+    &__container {
+      margin: 0  auto;
+      width: 1061px;
+    }
+    &__text-wrapper {
+      float: left;
+      width: 420px;
+      margin-top: 5px;
+      margin-left: 84px;
+    }
+    &__year {
+      position: relative;
+      top: -65px;
+      left: 49px;
+    }
+    &__title {
+      width: 420px;
+      margin-top: 23px;
+      margin-left: 75px;
+      font-size: 27px;
+      line-height: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &__text {
+      width: 420px;
+      margin-top: 13px;
+      margin-left: 75px;
+      font-size: 23px;
+      line-height: 41px;
+      font-weight: 400;
+    }
   }
 }

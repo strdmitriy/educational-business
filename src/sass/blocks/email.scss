@@ -1,0 +1,75 @@
+.email {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../img/email-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 59px;
+  padding-bottom: 95px;
+
+.email__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.email__title {
+  font-family: "Circe Extra-Bold", "Arial", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+  letter-spacing: 0.23px;
+  line-height: 34px;
+  margin-bottom: 50px; }
+
+.email__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-bottom: 60px; }
+
+.email-btn{
+  border: none;
+  background-color: #e62565;
+  color: #ffffff;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  border-radius: 6px;
+  padding: 2px 32px;
+  cursor: pointer;
+  font-size: 22px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.14px; }
+
+}
+  @media (min-width: 768px) {
+    .email {
+      background-image: url('../img/email-tablet.jpg');
+      &__wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 630px;
+      }
+    }
+  }
+
+
+  @media (min-width: 1200px) {
+    .email {
+      background-image: url('../img/email.jpg');
+      .email__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 1060px;
+      }
+      }
+    }

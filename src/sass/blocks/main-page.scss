@@ -1,0 +1,23 @@
+.page-main{
+  background: #fdfdfd;
+  &__container {
+    margin: 0 auto;
+    width: 272px;
+  }
+}
+
+@media (min-width: 767px) {
+  .page-main {
+    &__container {
+      width: 684px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main {
+    &__container {
+      width: 1061px;
+    }
+  }
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+ <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
   <link rel="stylesheet" href="css/style-min.css">
   <script>
     // Picture element HTML5 shiv
@@ -15,12 +15,15 @@
 <body>
   <header class="main-header">
     <div class="main-header__container">
-      <div class="logo">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/logo768.png">
-          <img src="img/logo.png" alt="Каменный город">
-        </picture>
-      </div>
+      <a href="">
+        <div class="logo">
+          <picture>
+            <source media="(min-width: 1400px)" srcset="img/logo.png">
+            <source media="(min-width: 768px)" srcset="img/logo.png">
+            <img src="img/logo.png" alt="Каменный город">
+          </picture>
+        </div>
+      </a>
       <button class="toggle" type="button">Открыть меню</button>
       <nav class="main-navigation main-navigation--visible">
         <ul class="main-navigation__menu">
@@ -100,28 +103,195 @@
         </div>
       </div>
   </div>
-  <div class="promo">
-    <p class="promo__title">Не просто <span>бизнес-</span>образование</p>
-    <p class="promo__text promo__text--size">Школа бизнеса «Каменный город» – это актуальное
-      образование для руководителей и менеджеров от топовых экспертов и лидеров рынка.</p>
-    <p class="promo__title">Успех в цифрах</p>
-    <p class="promo__text promo__text--hidden">Успех в бизнесе подтверждают не слова, а цифры. Мы уверены в своём лидерстве в области
-        бизнес образования, и знаем, как помочь вашей компании добиваться стабильного успеха.</p>
-  </div>
-  <div class="result">
-    <div class="result__container">
-    <div class="result__year">
-      <picture>
-        <source media="(min-width: 1400px)" srcset="img/5.png">
-        <source media="(min-width: 768px)" srcset="img/5.png">
-        <img src="img/9.png" alt="Каменный город">
-      </picture>
+  <main class="page-main">
+      <div class="promo">
+        <p class="promo__title">Не просто <span>бизнес-</span>образование</p>
+        <p class="promo__text promo__text--size">Школа бизнеса «Каменный город» – это актуальное
+          образование для руководителей и менеджеров от топовых экспертов и лидеров рынка.</p>
+        <p class="promo__title">Успех в цифрах</p>
+        <p class="promo__text promo__text--hidden">Успех в бизнесе подтверждают не слова, а цифры. Мы уверены в своём лидерстве в области
+            бизнес образования, и знаем, как помочь вашей компании добиваться стабильного успеха.</p>
+      </div>
+        <div class="owl-result owl-carousel owl-theme">
+          <div class="result">
+            <div class="result__container">
+            <div class="result__year">
+              <picture>
+                <source media="(min-width: 1400px)" srcset="img/5.png">
+                <source media="(min-width: 768px)" srcset="img/5-tablet.png">
+                <img src="img/9.png" alt="Каменный город">
+              </picture>
+            </div>
+            <div class="result__text-wrapper">
+              <p class="result__title">лет работы с 2013 года</p>
+              <p class="result__text">За это время мы столкнулись с сотнями кейсов от компаний разных сфер бизнеса. Разобрали и помогли решить как распространённые, так и с
+              ложные задачи. Весь наработанный опыт мы направим на то, чтобы ваш бизнес заработал на новом уровне.</p>
+            </div>
+            </div>
+          </div>
+          <div class="result">
+            <div class="result__container">
+            <div class="result__year">
+              <picture>
+                <source media="(min-width: 1400px)" srcset="img/2546.png">
+                <source media="(min-width: 768px)" srcset="img/2546-tablet.png">
+                <img src="img/9.png" alt="Каменный город">
+              </picture>
+            </div>
+            <div class="result__text-wrapper">
+              <p class="result__title">Часов обучения</p>
+              <p class="result__text">За последние два года именно столько времени участники наших программ посвятили учёбе. Это 106 дней или 3 месяца непрерывного потока знаний в режиме нон-стоп. Мы рады заряжать вас страстью и трудолюбием в стремлении расти и быть лучше.</p>
+            </div>
+            </div>
+          </div>
+          <div class="result">
+            <div class="result__container">
+            <div class="result__year">
+              <picture>
+                <source media="(min-width: 1400px)" srcset="img/77.png">
+                <source media="(min-width: 768px)" srcset="img/77-tablet.png">
+                <img src="img/9.png" alt="Каменный город">
+              </picture>
+            </div>
+            <div class="result__text-wrapper">
+              <p class="result__title">участников становятся постоянными клиентами</p>
+              <p class="result__text">Ваше доверие – это наш главныйстимул создавать для вас свежие,смелые и актуальные бизнес программы. Мы ценим вас и ваше время, гордимся вашими успехами и рады предлагать для вас эксклюзивные проекты.</p>
+            </div>
+            </div>
+          </div>
+          <div class="result">
+            <div class="result__container">
+            <div class="result__year">
+              <picture>
+                <source media="(min-width: 1400px)" srcset="img/65.png">
+                <source media="(min-width: 768px)" srcset="img/65-tablet.png">
+                <img src="img/9.png" alt="Каменный город">
+              </picture>
+            </div>
+            <div class="result__text-wrapper">
+              <p class="result__title">доля корпоративного обучения</p>
+              <p class="result__text">Комплексное решение управленческих и маркетинговых задач компании – это сложно и это наша жизнь! Мы с головой погружаемся в проекты, требующие больших сил, чтобы каждое звено вашего бизнеса работало чётко, результативно, уверенно.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-main__container">
+        <div class="reason">
+          <h1 class="reason__title">Что мы делаем</h1>
+          <div class="owl-result reason__wrapper owl-carousel owl-theme">
+            <div class="reason-items">
+              <img class="reason__img "src="img/reason-education.png" alt="" width="60" height="62">
+              <p class="reason-items__title">Корпоративное обучение</p>
+              <p class="reason-items__text">Выявляем и решаем актуальные задачи вашей компании в сфере продаж, менеджмента, hr, финансов, маркетинга, сервиса. Повышаем личную эффективность и лидерские навыки.</p>
+            </div>
+
+            <div class="reason-items">
+              <img class="reason__img "src="img/reason-kons.png" alt="" width="60" height="62">
+              <p class="reason-items__title">Консалтинг</p>
+              <p class="reason-items__text">Консультируем по любым вопросам ведения бизнеса. Помогаем оптимизировать бизнес-процессы, увеличить продажи, развить пути привлечения и удержания клиентов.</p>
+            </div>
+
+            <div class="reason-items">
+              <img class="reason__img "src="img/reason-open.png" alt="" width="60" height="62">
+              <p class="reason-items__title">Открытые программы</p>
+              <p class="reason-items__text">Проводим образовательные мероприятия открытого формата. Приглашаем востребованных спикеров и бизнес тренеров, известных в Россиии за ее пределами.</p>
+            </div>
+
+            <div class="reason-items">
+              <img class="reason__img "src="img/reason-sell.png" alt="" width="60" height="62">
+              <p class="reason-items__title">Комбинат продаж</p>
+              <p class="reason-items__text">Авторский комплексный курс по продажам. Насыщенная программа направлена на развитие ключевых компетенций в продажах и включает встречи с представителями бизнеса.</p>
+            </div>
+
+            <div class="reason-items">
+              <img class="reason__img "src="img/reason-brackfast.png" alt="" width="60" height="62">
+              <p class="reason-items__title">Бизнес-завтраки</p>
+              <p class="reason-items__text">Создаём уникальную площадку для нетворкинга. Встречи с представителями известных компаний г. Перми, общение с приглашёнными экспертами, владельцами бизнеса, топ-менеджерами.</p>
+            </div>
+          </div>
+        </div>
+        <div class="program">
+          <h1 class="program__title">Ближайшие программы</h1>
+          <div class="program__wrapper owl-carousel owl-theme">
+            <div class="program-info">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/program-conf.png">
+                <img src="img/program-conf-mobile.png" alt="Каменный город">
+              </picture>
+              <p class="program-info__date">26 января 2018</p>
+              <p class="program-info__name">конференция</p>
+              <p class="program-info__text">маркетинга 2018»</p>
+            </div>
+            <div class="program-info">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/program-conf.png">
+                <img src="img/program-conf-mobile.png" alt="Каменный город">
+              </picture>
+              <p class="program-info__date">26 января 2018</p>
+              <p class="program-info__name">конференция</p>
+              <p class="program-info__text">маркетинга 2018»</p>
+            </div>
+            <div class="program-info">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/program-conf.png">
+                <img src="img/program-conf-mobile.png" alt="Каменный город">
+              </picture>
+              <p class="program-info__date">26 января 2018</p>
+              <p class="program-info__name">конференция</p>
+              <p class="program-info__text">маркетинга 2018»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="email">
+      <div class="email__wrapper">
+        <p class="email__title">Подпишись на рассылку</p>
+        <p class="email__text">Получайте свежие анонсы и новости о предстоящих мероприятиях первыми. В благодарность за подписку мы подготовили электронную подборку из 50 бизнес-бестеллеров.</p>
+        <button class="email-btn">Подписаться</button>
+      </div>
     </div>
-    <p class="result__title">лет работы с 2009 года</p>
-    <p class="result__text">За это время мы столкнулисьс сотнями кейсов от компаний разных сфер бизнеса. Разобрали и помогли решить как распространённые, так и с
-      ложные задачи. Весь наработанный опыт мы направим на то, чтобы ваш бизнес заработал на новом уровне.</p>
-    </div>
-  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
   <script src="js/minjs/menu.js"></script>
+  <script>
+  const reason = document.querySelector('.reason__wrapper');
+  const result = document.querySelector('.owl-result');
+  const program = document.querySelector('.program');
+  const programInfo = program.querySelector('.program__wrapper')
+  function getWindowWidth() {
+    return window.innerWidth || document.body.clientWidth;
+  }
+
+    if (getWindowWidth() > 767) {
+      reason.classList.remove('owl-carousel');
+      reason.classList.remove('owl-theme');
+    } else {
+      reason.classList.add('owl-carousel');
+      reason.classList.add('owl-theme');
+    }
+
+    $(".owl-carousel").owlCarousel({
+       items: 1,
+       dots: true,
+       touchDrag: true,
+    });
+
+    $(".program__wrapper").owlCarousel({
+    loop:true,
+    margin:10,
+    dots: true,
+    touchDrag: true,
+    responsiveClass:true,
+    responsive:{
+        320:{
+            items:1
+        },
+        767:{
+            items:3
+        }
+    }
+})
+  </script>
 </body>
 </html>

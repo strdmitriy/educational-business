@@ -1,0 +1,33 @@
+.reason {
+  &__title {
+    margin: 0;
+    margin-top: 91px;
+    font-size: 26px;
+    line-height: 47px;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .reason {
+    &__wrapper {
+      margin: 0 auto;
+      width: 684px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      align-content: stretch;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .reason {
+    &__wrapper {
+      width: 1061px;
+    }
+  }
+}
