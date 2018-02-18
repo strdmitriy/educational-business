@@ -29,5 +29,15 @@
     &__wrapper {
       width: 1061px;
     }
+    img {
+      width: 88px;
+      height: 88px;
+    }
+    &__title {
+      margin: 0;
+      margin-top: 78px;
+      margin-bottom: 69px;
+      font-size: 38px;
+    }
   }
 }

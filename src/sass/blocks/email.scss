@@ -1,75 +1,92 @@
 .email {
+  margin-top: 100px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../img/email-mobile.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   padding-top: 59px;
   padding-bottom: 95px;
 
-.email__wrapper {
+&__wrapper {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
   width: 300px;
 }
 
-.email__title {
+&__title {
   font-family: "Circe Extra-Bold", "Arial", sans-serif;
-  font-size: 37px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 0.23px;
-  line-height: 34px;
-  margin-bottom: 50px; }
+  line-height: 42px;
+  margin-bottom: 50px;
+}
 
-.email__text {
-  font-size: 24px;
+&__text {
+  font-size: 20px;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 32px;
   letter-spacing: 0.15px;
-  padding-left: 90px;
-  padding-right: 90px;
-  margin-bottom: 60px; }
-
-.email-btn{
-  border: none;
-  background-color: #e62565;
-  color: #ffffff;
-  font-family: "Circe", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 34px;
-  border-radius: 6px;
-  padding: 2px 32px;
-  cursor: pointer;
-  font-size: 22px;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  letter-spacing: 0.14px; }
-
+  }
 }
   @media (min-width: 768px) {
     .email {
+      height: 345px;
       background-image: url('../img/email-tablet.jpg');
       &__wrapper {
         padding-left: 15px;
         padding-right: 15px;
         width: 630px;
       }
+      &__title {
+        font-family: "Circe Extra-Bold", "Arial", sans-serif;
+        font-size: 25px;
+        line-height: 22px;
+        font-weight: 900;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        }
     }
   }
 
 
   @media (min-width: 1200px) {
     .email {
+      margin-top: 140px;
+      height: 336px;
       background-image: url('../img/email.jpg');
       .email__wrapper {
         padding-left: 20px;
         padding-right: 20px;
         width: 1060px;
       }
+      &__title {
+        margin-top: 26px;
+        margin-bottom: 50px;
+        font-family: "Circe Extra-Bold", "Arial", sans-serif;
+        font-size: 37px;
+        font-weight: 900;
+        letter-spacing: 0.23px;
+        line-height: 34px;
       }
+
+      &__text {
+        width: 845px;
+        margin: 0 auto;
+        margin-top: 71px;
+        margin-bottom: 62px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: .15px;
+        }
     }
+  }

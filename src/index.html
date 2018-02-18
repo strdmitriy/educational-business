@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
   <link rel="stylesheet" href="css/style-min.css">
@@ -112,7 +114,7 @@
         <p class="promo__text promo__text--hidden">Успех в бизнесе подтверждают не слова, а цифры. Мы уверены в своём лидерстве в области
             бизнес образования, и знаем, как помочь вашей компании добиваться стабильного успеха.</p>
       </div>
-        <div class="owl-result owl-carousel owl-theme">
+        <div id="owl-result" class="owl-carousel owl-theme">
           <div class="result">
             <div class="result__container">
             <div class="result__year">
@@ -175,40 +177,63 @@
             </div>
           </div>
         </div>
+        <script>
+        $('#owl-result').owlCarousel({
+           items: 1,
+           dots: true,
+           touchDrag: true,
+        });
+        </script>
         <div class="page-main__container">
         <div class="reason">
           <h1 class="reason__title">Что мы делаем</h1>
-          <div class="owl-result reason__wrapper owl-carousel owl-theme">
+          <div id="reason-slide" class="reason__wrapper owl-carousel owl-theme">
             <div class="reason-items">
-              <img class="reason__img "src="img/reason-education.png" alt="" width="60" height="62">
+              <img class="reason__img "src="img/icon-dir1.svg" alt="">
               <p class="reason-items__title">Корпоративное обучение</p>
               <p class="reason-items__text">Выявляем и решаем актуальные задачи вашей компании в сфере продаж, менеджмента, hr, финансов, маркетинга, сервиса. Повышаем личную эффективность и лидерские навыки.</p>
             </div>
 
             <div class="reason-items">
-              <img class="reason__img "src="img/reason-kons.png" alt="" width="60" height="62">
+              <img class="reason__img "src="img/icon-dir2.svg" alt="">
               <p class="reason-items__title">Консалтинг</p>
               <p class="reason-items__text">Консультируем по любым вопросам ведения бизнеса. Помогаем оптимизировать бизнес-процессы, увеличить продажи, развить пути привлечения и удержания клиентов.</p>
             </div>
 
             <div class="reason-items">
-              <img class="reason__img "src="img/reason-open.png" alt="" width="60" height="62">
+              <img class="reason__img "src="img/icon-dir3.svg" alt="">
               <p class="reason-items__title">Открытые программы</p>
               <p class="reason-items__text">Проводим образовательные мероприятия открытого формата. Приглашаем востребованных спикеров и бизнес тренеров, известных в Россиии за ее пределами.</p>
             </div>
 
             <div class="reason-items">
-              <img class="reason__img "src="img/reason-sell.png" alt="" width="60" height="62">
+              <img class="reason__img "src="img/icon-dir4.svg" alt="">
               <p class="reason-items__title">Комбинат продаж</p>
               <p class="reason-items__text">Авторский комплексный курс по продажам. Насыщенная программа направлена на развитие ключевых компетенций в продажах и включает встречи с представителями бизнеса.</p>
             </div>
 
             <div class="reason-items">
-              <img class="reason__img "src="img/reason-brackfast.png" alt="" width="60" height="62">
+              <img class="reason__img "src="img/icon-dir5.svg" alt="">
               <p class="reason-items__title">Бизнес-завтраки</p>
               <p class="reason-items__text">Создаём уникальную площадку для нетворкинга. Встречи с представителями известных компаний г. Перми, общение с приглашёнными экспертами, владельцами бизнеса, топ-менеджерами.</p>
             </div>
           </div>
+          <script>
+          /*
+          const reason = document.querySelector('#reason-slide');
+          function getWindowWidth() {
+            return window.innerWidth || document.body.clientWidth;
+          }
+
+            if (getWindowWidth() > 767) {
+              reason.classList.remove('owl-carousel');
+              reason.classList.remove('owl-theme');
+            } else {
+              reason.classList.add('owl-carousel');
+              reason.classList.add('owl-theme');
+            }*/
+
+          </script>
         </div>
         <div class="program">
           <h1 class="program__title">Ближайшие программы</h1>
@@ -251,32 +276,158 @@
         <button class="email-btn">Подписаться</button>
       </div>
     </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div id="reviews-slider" class="owl-carousel owl-theme reviews__list">
+          <div class="reviews__item">
+            <p class="reviews__text">
+              «Каменный город» предлагает обучение у лучших тренеров и спикеров,
+        выбирает наиболее актуальные для нас темы обучения, качественно организует
+        каждое мероприятие. Мы участвуем в обучении и всей командой -<br>
+        это помогает создать общее понятийное поле, формирует<br> одинаковое видение принципов бизнеса у всех сотрудников.
+            </p>
+            <figure class="reviews__author">
+              <img src="img/foto-comment.png" alt="Даниил Прибылев" width="107" height="108">
+              <figcaption>
+                Даниил Прибылев <span class="reviews__position">Генеральный директор «Эрготек» (г. Пермь)</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="reviews__item">
+            <p class="reviews__text">
+              После обучения в Школе бизнеса «Каменый город» наши сотрудники<br> с удовольствием дают обратную связь и она всегда положительная.<br> Люди начинают менять свою жизнь (как профессиональную так и личную)<br> в лучшую сторону, а наша Корпорация приобретает позитивно настроенных и инициативных сотрудников, соответствующих философии нашей компании.
+            </p>
+            <figure class="reviews__author">
+              <img src="img/foto-comment2.png" alt="Наталия Сергеева" width="107" height="108">
+              <figcaption>
+                Наталия Сергеева <span class="reviews__position">Руководитель отдела персонала ГК «Пермснабсбыт» (г. Пермь)</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <script>
+      $('#reviews-slider').owlCarousel({
+         items: 1,
+         dots: true,
+         touchDrag: true,
+         responsive: {
+           768: {
+             item: 3
+           }
+         }
+      });
+      </script>
+    </section>
+    <section class="clients">
+      <h2 class="clients__heading">Наши клиенты</h2>
+      <div class="clients__wrapper">
+        <div id ="client-slid" class="clients__list owl-carousel owl-theme">
+          <div class="clients__item">
+            <h3 class="visually-hidden">Сбербанк</h3>
+            <img src="img/sber.png" alt="Сбербанк" class="clients__logo">
+          </div>
+          <div class="clients__item">
+            <h3 class="visually-hidden">ПЭК</h3>
+            <img src="img/pek.png" alt="ПЭК" class="clients__logo">
+          </div>
+          <div class="clients__item">
+            <h3 class="visually-hidden">ЭР-Телеком</h3>
+            <img src="img/r-telecom.png" alt="ЭР-Телеком" class="clients__logo">
+          </div>
+          <div class="clients__item">
+            <h3 class="visually-hidden">Урал-ФД</h3>
+            <img src="img/ural-fd-copy.png" alt="Урал-ФД" class="clients__logo">
+          </div>
+          <div class="clients__item">
+            <h3 class="visually-hidden">ПермСнабСбыт</h3>
+            <img src="img/pss.png" alt="ПермСнабСбыт" class="clients__logo">
+          </div>
+          <div class="clients__item">
+            <h3 class="visually-hidden">Редуктор-ПМ</h3>
+            <img src="img/reductor.png" alt="Редуктор-ПМ" class="clients__logo">
+          </div>
+        </div>
+        <script>
+        $('#client-slid').owlCarousel({
+           autoplay: true,
+           loop: true,
+           dots: false,
+           touchDrag: true,
+           responsive: {
+             0: {
+               items: 1
+             },
+             767: {
+               items: 5
+             }
+           }
+        });
+        </script>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__wrapper">
+        <h2 class="news__heading"><a href="#">Новости</a></h2>
+        <div id="news-slide" class="news__list owl-carousel owl-theme">
+
+          <div class="news__item">
+            <div class="programs__picture">
+              <div style="background-image: url(img/news1.jpg); height: 130px;"></div>
+            </div>
+            <h3 class="news__title"><a href="#">Как развитие <br> личности руководителя влияет на бизнес?</a></h3>
+            <time class="news__date" datetime="2017-12-07">07.12.2017</time>
+          </div>
+
+          <div class="news__item">
+            <div class="programs__picture">
+              <div style="background-image: url(img/news2.jpg); height: 130px;"></div>
+            </div>
+            <h3 class="news__title"><a href="#">Древний миф маркетинга</a></h3>
+            <time class="news__date" datetime="2017-11-28">28.11.2017</time>
+          </div>
+          <div class="news__item">
+            <div class="programs__picture">
+              <div style="background-image: url(img/news3.jpg); height: 130px;"></div>
+            </div>
+            <h3 class="news__title"><a href="#">Что делать, если клиента интересует низкая цена?</a></h3>
+            <time class="news__date" datetime="2017-11-15">15.11.2017</time>
+          </div>
+          <div class="news__item">
+            <div class="programs__picture">
+              <div style="background-image: url(img/news4.jpg); height: 130px;"></div>
+            </div>
+            <h3 class="news__title"><a href="#">Психология телефонных переговоров</a></h3>
+            <time class="news__date" datetime="2017-11-01">01.11.2017</time>
+          </div>
+
+        </div>
+        <script>
+        $('#news-slide').owlCarousel({
+           loop: true,
+           items: 1,
+           dots: false,
+           touchDrag: true,
+           responsive: {
+             0: {
+               items: 1,
+               dots: true
+             },
+             767: {
+               items: 3
+             },
+             1200: {
+               items: 4
+             }
+           }
+        });
+        </script>
+      </div>
+    </section>
+
   <script src="js/minjs/menu.js"></script>
   <script>
-  const reason = document.querySelector('.reason__wrapper');
-  const result = document.querySelector('.owl-result');
-  const program = document.querySelector('.program');
-  const programInfo = program.querySelector('.program__wrapper')
-  function getWindowWidth() {
-    return window.innerWidth || document.body.clientWidth;
-  }
-
-    if (getWindowWidth() > 767) {
-      reason.classList.remove('owl-carousel');
-      reason.classList.remove('owl-theme');
-    } else {
-      reason.classList.add('owl-carousel');
-      reason.classList.add('owl-theme');
-    }
-
-    $(".owl-carousel").owlCarousel({
-       items: 1,
-       dots: true,
-       touchDrag: true,
-    });
-
     $(".program__wrapper").owlCarousel({
     loop:true,
     margin:10,

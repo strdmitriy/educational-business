@@ -3,6 +3,7 @@
   left: 0;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 .main-navigation__menu {
@@ -19,7 +20,7 @@
   list-style: none;
 
   &:hover {
-    background: #669ec0;
+    background: grey;
     color: red;
     transition: ease-in-out 0.25s;
   }
@@ -34,6 +35,7 @@
 .main-navigation__link {
   font-family: "Circe-Bold", "Arial", sans-serif;
   display: block;
+  padding: 3px 0;
   padding-left: 24px;
   font-size: 15px;
   line-height: 48px;
@@ -44,7 +46,7 @@
   text-decoration: none;
 
   &:hover {
-    color: #81b3d2;
+    color: lightgrey;
   }
 
   &:active {
@@ -63,8 +65,8 @@
     position: static;
     float: left;
     width: 630px;
-    margin-top: 32px;
-    margin-left: 174px;
+    margin-top: 40px;
+    margin-left: 231px;
   }
   .main-navigation--visible {
     display: block;

@@ -27,3 +27,24 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .program {
+    &__wrapper {
+      margin: 0 auto;
+      width: 1020px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      align-content: stretch;
+    }
+    &__title {
+      margin: 0;
+      margin-bottom: 47px;
+      margin-top: -6px;
+      font-size: 36px;
+    }
+  }
+}

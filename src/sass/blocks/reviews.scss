@@ -1,0 +1,122 @@
+.reviews {
+  background-image: url('../img/bg.png');
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 45px;
+  h2 {
+    text-align: center;
+    display: none;
+  }
+   &__wrapper {
+    margin: 0 auto;
+    width: 272px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 43px;
+      height: 34px;
+      top: -36px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-image: url("../img/quote.png");
+      background-size: 43px 34px;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  &__item {
+    text-align: center;
+    position: relative;
+    &:nth-child(1) {
+      opacity: 1;
+    }
+  }
+
+&__text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+&__author {
+  margin: 0;
+  padding: 0;
+}
+  .reviews__author img {
+    border-radius: 50%;
+    margin: auto; }
+  .reviews__author figcaption {
+    font-family: "Circe Extra-Bold", "Arial", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 23px;
+    margin-bottom: 0; }
+  .reviews__author .reviews__position {
+    display: block;
+    font-family: "Circe", "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: 5px; }
+
+.reviews__controls {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 3px; }
+  .reviews__controls .controls__item {
+    margin-right: 12px; }
+  .reviews__controls .controls__button {
+    width: 8px;
+    height: 8px; }
+}
+
+@media screen and (min-width: 767px) {
+  .reviews {
+    height: 450px;
+    &__text {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    &__wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 630px;
+    }
+    &__author {
+      figcaption {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+  @media screen and (min-width: 1100px) {
+    .reviews {
+      height: 480px;
+      padding-top: 125px;
+      &__text {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      &__wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 1061px;
+      }
+      &__author {
+        figcaption {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,21 @@
+.email-btn {
+  border: none;
+  background-color: #e62565;
+  color: #ffffff;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  border-radius: 6px;
+  padding: 2px 32px;
+  cursor: pointer;
+  font-size: 22px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.14px;
+  &:hover {
+    background-color: #f12759;
+  }
+}
