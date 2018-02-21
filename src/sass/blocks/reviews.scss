@@ -1,11 +1,28 @@
+@media screen and (min-width:  320px) {
+
+
 .reviews {
   background-image: url('../img/bg.png');
   background-color: #ffffff;
-  padding-top: 70px;
+  padding-top: 32px;
   padding-bottom: 45px;
   h2 {
+    display: block;
+    margin: 0;
+    height: 105px;
     text-align: center;
-    display: none;
+    font-family: "Circe Extra-Bold","Arial",sans-serif;
+    font-size: 29px;
+    font-weight: 900;
+    width: 100%;
+    background: #fff;
+    margin-top: -32px;
+    margin-bottom: 9px;
+    height: 62px;
+    padding-top: 43px;
+    span {
+      display: none;
+    }
   }
    &__wrapper {
     margin: 0 auto;
@@ -16,7 +33,7 @@
       content: "";
       width: 43px;
       height: 34px;
-      top: -36px;
+      top: 16px;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
@@ -38,9 +55,11 @@
   }
 
 &__text {
+  margin-top: 51px;
+  margin-bottom: 28px;
+  font-family: 'Circe', 'Aria', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 28px;
 }
 
 &__author {
@@ -78,10 +97,13 @@
     width: 8px;
     height: 8px; }
 }
-
+}
 @media screen and (min-width: 767px) {
   .reviews {
     height: 450px;
+    h2 {
+      display: none;
+    }
     &__text {
       font-size: 16px;
       line-height: 28px;

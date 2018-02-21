@@ -19,11 +19,7 @@
     <div class="main-header__container">
       <a href="">
         <div class="logo">
-          <picture>
-            <source media="(min-width: 1400px)" srcset="img/logo.png">
-            <source media="(min-width: 768px)" srcset="img/logo.png">
             <img src="img/logo.png" alt="Каменный город">
-          </picture>
         </div>
       </a>
       <button class="toggle" type="button">Открыть меню</button>
@@ -74,6 +70,14 @@
       <div class="search">
         <button class="btn-search"></button>
       </div>
+      <section class="page-header__search-form">
+        <h2 class="visually-hidden">Поиск по сайту</h2>
+        <form class="search-form" action="#" method="get">
+          <label for="search" class="visually-hidden">Введите ваш запрос</label>
+          <input class="search-form__input" type="text" placeholder="Что ищем?" name="search" id="search">
+          <button class="search-form__button" type="submit">Найти</button>
+        </form>
+      </section>
     </div>
   </header>
   <div class="intro">
@@ -232,12 +236,16 @@
               reason.classList.add('owl-carousel');
               reason.classList.add('owl-theme');
             }*/
-
+            $('#reason-slide').owlCarousel({
+               items: 1,
+               dots: true,
+               touchDrag: true,
+            });
           </script>
         </div>
         <div class="program">
           <h1 class="program__title">Ближайшие программы</h1>
-          <div class="program__wrapper owl-carousel owl-theme">
+          <div id="program-slide" class="program__wrapper owl-carousel owl-theme">
             <div class="program-info">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/program-conf.png">
@@ -267,18 +275,35 @@
             </div>
           </div>
         </div>
+        <script>
+          $("#program-slide").owlCarousel({
+          loop:true,
+          margin:10,
+          dots: true,
+          touchDrag: true,
+          responsiveClass:true,
+          responsive:{
+              320:{
+                  items:1
+              },
+              767:{
+                  items:3
+              }
+          }
+      })
+        </script>
       </div>
     </main>
     <div class="email">
       <div class="email__wrapper">
         <p class="email__title">Подпишись на рассылку</p>
-        <p class="email__text">Получайте свежие анонсы и новости о предстоящих мероприятиях первыми. В благодарность за подписку мы подготовили электронную подборку из 50 бизнес-бестеллеров.</p>
+        <p class="email__text">Получайте свежие анонсы и новости о предстоящих мероприятиях первыми. <span>В благодарность за подписку мы подготовили электронную подборку из 50 бизнес-бестеллеров.</span></p>
         <button class="email-btn">Подписаться</button>
       </div>
     </div>
     <section class="reviews">
+      <h2 class="reviews-hidden">Отзывы <span>о нас</span></h2>
       <div class="reviews__wrapper">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
         <div id="reviews-slider" class="owl-carousel owl-theme reviews__list">
           <div class="reviews__item">
             <p class="reviews__text">
@@ -356,8 +381,8 @@
            dots: false,
            touchDrag: true,
            responsive: {
-             0: {
-               items: 1
+             320: {
+               items: 2
              },
              767: {
                items: 5
@@ -425,24 +450,64 @@
         </script>
       </div>
     </section>
-
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="img/logo-full.png" alt=Логотип"">
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__list--left">
+            <li class=""><a href="">Компании</a></li>
+            <li class=""><a href="">Новости</a></li>
+            <li class=""><a href="">Команда</a></li>
+            <li class=""><a href="">Вакансии</a></li>
+            <li class=""><a href="">Контакты</a></li>
+          </ul>
+          <ul class="footer__list--right">
+            <li class=""><a href="">Мероприятия</a></li>
+            <li class=""><a href="">Тренеры</a></li>
+            <li class=""><a href="">Корпоративное обучение</a></li>
+            <li class=""><a href="">Политика конфиденциа</a></li>
+          </ul>
+        </div>
+        <div class="footer__subscribe">
+          <form action="#" method="post" class="page-footer__subscribe-form">
+            <input class="page-footer__subscribe-input" type="email" placeholder="Ваш e-mail адрес" id="email" name="email">
+            <button class="page-footer__subscribe-button" type="submit">Подписаться</button>
+          </form>
+          <p class="page-footer__subscribe-text">
+            Подпишитесь на рассылку новостей от Каменного города. Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных данных</a>.
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__contacts--hidden">Наши контакты</p>
+          <p class="footer__phone">
+            <a href="tel:+73422060836">+7 (342) 206-08-36</a>
+          </p>
+          <p class="footer__email">
+            <a href="mailto:info@kamgorod.com">info@kamgorod.com</a>
+          </p>
+          <p class="footer__address">г. Пермь, Сибирская улица, 35 Д
+          <p class="footer__copyright">© ООО «ИКЦ «Каменный город», 2013‐2018</p>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link footer-social__link--fb"></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link footer-social__link--vk"></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link footer-social__link--ins"></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link footer-social__link--youtube"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   <script src="js/minjs/menu.js"></script>
-  <script>
-    $(".program__wrapper").owlCarousel({
-    loop:true,
-    margin:10,
-    dots: true,
-    touchDrag: true,
-    responsiveClass:true,
-    responsive:{
-        320:{
-            items:1
-        },
-        767:{
-            items:3
-        }
-    }
-})
-  </script>
 </body>
 </html>

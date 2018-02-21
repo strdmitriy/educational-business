@@ -116,7 +116,7 @@
         line-height: 60px
       }
       &--small {
-        font-size: 24px;
+        font-size: 19px;
         line-height: 34px;
       }
     }
@@ -126,5 +126,11 @@
 @media (min-width: 1400px) {
   .description {
     display: none;
+    &__date {
+      margin-top: 94px;
+      &--size {
+        margin-top: 200px;
+      }
+    }
   }
 }

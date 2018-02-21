@@ -73,6 +73,9 @@
       &:hover .description {
         display: block;
       }
+      &:hover {
+        background-image: inear-gradient(to right, rgb(255,75,31) 0%,rgb(160,49,45) 100%);
+      }
     }
     &--autor {
       float: left;
@@ -98,11 +101,30 @@
       float: left;
       padding-top: 0;
       width: 30%;
-      height: 191px;
+      height: 190px;
       background-image: url('../img/event-news-two-desktop.jpg');
       &:hover .description {
         display: block;
       }
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .event {
+    &--conf {
+      height: 770px;
+      background-image: url('../img/conf-desktop-large.jpg');
+    }
+    &--autor {
+      height: 536px;
+      background-image: url('../img/autor-desktop-large.jpg');
+    }
+    &--news {
+      height: 233px;
+    }
+    &--news-two {
+      height: 233px;
     }
   }
 }

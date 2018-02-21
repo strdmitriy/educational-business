@@ -57,7 +57,8 @@
 
     &::before {
       transform: rotate(45deg);
-      box-shadow: none;
+      background-color: #ffffff!important;
+      box-shadow: none!important;
     }
 
     &::after {

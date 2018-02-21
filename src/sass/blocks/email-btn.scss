@@ -7,15 +7,19 @@
   font-weight: 400;
   line-height: 34px;
   border-radius: 6px;
-  padding: 2px 32px;
   cursor: pointer;
   font-size: 22px;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 9px 39px;
   letter-spacing: 0.14px;
   &:hover {
     background-color: #f12759;
+  }
+}
+@media (min-width: 768px) {
+  .email-btn {
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
